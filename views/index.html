@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Hack 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <base href="/">
+
+  <!-- jQuery -->
+  <script src="/static/node_modules/jquery/dist/jquery.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="/static/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="/static/node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <!-- Angular -->
+  <script src="/static/node_modules/angular/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src="/static/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/static/bower_components/angular-animate/angular-animate.js"></script>
+
+  <!-- D3.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMb-RrwXLP2SWvjnoW4Xioyv7Ez4WRPCM"></script>
+
+  <!-- Controllers -->
+  <script src="/static/controllers/index.js"></script>
+  <script src="/static/controllers/home/homeTopController.js"></script>
+  <script src="/static/controllers/home/homeBottomController.js"></script>
+  <script src="/static/controllers/maps/mapsTopController.js"></script>
+  <script src="/static/controllers/maps/mapsBottomController.js"></script>
+  <script src="/static/controllers/items/itemsTopController.js"></script>
+  <script src="/static/controllers/items/itemsBottomController.js"></script>
+
+  <!-- Custom -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Orbitron|Permanent+Marker|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <link rel="stylesheet" href="/static/css/ngAnimations.css">
+
+</head>
+<body>
+
+<div ng-app="app">
+
+  <div class="animate slide-left" ui-view="topSegment"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="animate fade-in" ui-view="bottomSegment"></div>
+
+</div>
+
+</body>
+</html>

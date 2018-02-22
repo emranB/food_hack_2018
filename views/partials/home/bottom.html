@@ -1,0 +1,32 @@
+<div class="bottom-container container-fluid" ng-controller="homeBottomController">
+  <div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="orbitron">Featured Products:</h3>
+      <hr>
+    </div>
+
+    <div class="tile-container">
+      <a ui-sref="item({itemId: {{row.id}} })" class="col-xs-12 col-sm-12 slide-down tile photo orbitron black-box-shadowed" ng-repeat="row in data">
+        <h2 class="black-text-shadowed">
+          {{row.item_name}}
+        </h2>
+        <hr>
+        {{row.item_quantity}} x {{row.name}} <br> {{row.location}} <br> {{}}
+        <br><br>
+        <p class="follow-link">
+          <i class="fa fa-chevron-circle-right icon"></i>
+          &nbsp
+          Find out more . . .
+        </p>
+      </a>
+    </div>
+
+  </div>
+</div>

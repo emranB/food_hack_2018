@@ -1,0 +1,43 @@
+<div class="bottom-container container-fluid" ng-controller="itemsBottomController">
+  <div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="orbitron">{{item.name}}</h3>
+      <hr>
+    </div>
+
+    <div class="orbitron col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 50px 20px;">
+      <h6 class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          Location:
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          {{item.location}}
+        </div>
+      </h6>
+      <h6 class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          Available:
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <span style="color: orange;">{{item.item_quantity}} in stock</span>
+        </div>
+      </h6>
+      <h6 class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          Price:
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <span style="color: orange;">$ {{item.item_price}} each</span>
+        </div>
+      </h6>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 map one-item yellow-box-shadowed" id="map-one-item"></div>
+
+
+  </div>
+</div>
